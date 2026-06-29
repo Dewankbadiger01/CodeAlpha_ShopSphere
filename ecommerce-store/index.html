@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopSphere</title>
-        <link rel="stylesheet" href="Css/style.css">
-<link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-        <link rel="stylesheet" href="Css/product.css">
-<link rel="stylesheet"
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/product.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
+
+    <!-- ================= HEADER ================= -->
+
     <header>
-<div class="logo">       
- <h1>ShopSphere</h1>
-</div>
+
+        <div class="logo">
+            <h1>ShopSphere</h1>
+        </div>
+
         <div class="search-box">
-            <input type="text" placeholder="Search products...">
+
+<input type="text" id="search-input" placeholder="Search products...">
             <button>
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
+
         </div>
-          <div class="icons">
+
+        <div class="icons">
 
             <a href="#">
                 <i class="fa-regular fa-user"></i>
@@ -38,46 +50,87 @@
             </a>
 
         </div>
+
     </header>
+
+    <!-- ================= NAVBAR ================= -->
+
     <nav>
+
         <a href="#">Home</a>
         <a href="#">Categories</a>
         <a href="#">Men</a>
         <a href="#">Women</a>
         <a href="#">Kids</a>
-      <a href="#">Electronics</a>
+        <a href="#">Electronics</a>
         <a href="#">Offers</a>
+
     </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+
     <section class="hero">
+
         <div class="hero-content">
-<h4>Trending Collection</h4>
-<h1 id="hero-title">
-</h1>
-<p id="hero-desc"></p>
-<button>Shop Now</button>
+
+            <h4>Trending Collection</h4>
+
+            <h1 id="hero-title"></h1>
+
+            <p id="hero-desc"></p>
+
+            <button>Shop Now</button>
+
         </div>
-    <div class="hero-image">
-<h1 id="hero-title"></h1>
 
-<p id="hero-desc"></p>
+        <div class="hero-image">
 
-<img id="img-1" src="images/hero1.jpg"></div>
+<img id="img-1" src="Images/hero1.avif">
+        </div>
 
     </section>
+
+    <!-- ================= HERO BUTTONS ================= -->
+
     <div class="slider-btns">
-    <button id="prev-btn" class="prev">⬅ Previous</button>
-    <button id="next-btn" class="next">Next ➡</button>
-</div>
-<section class="featured-products">
 
-    <h2>Featured Products</h2>
+        <button id="prev-btn">⬅ Previous</button>
 
-    <div class="product-container" id="product-container">
+        <button id="next-btn">Next ➡</button>
 
     </div>
 
-</section>
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="featured-products">
+
+        <h2>Featured Products</h2>
+
+        <div class="product-container" id="product-container">
+
+            <!-- Products will be loaded here -->
+
+        </div>
+
+    </section>
+
+    <!-- ================= PAGINATION ================= -->
+
+    <div class="pagination">
+
+        <button id="prev-page">Previous</button>
+
+        <span id="page-number">1</span>
+
+        <button id="next-page">Next</button>
+
+    </div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
     <script src="JS/script.js"></script>
-    <script src="JS/product.js"></script>
+    <script src="JS/products.js"></script>
+
 </body>
+
 </html>
