@@ -1,0 +1,256 @@
+/* =======================
+   CART SECTION
+======================= */
+
+.cart{
+    width:90%;
+    margin:40px auto;
+}
+
+.cart h2{
+    font-size:32px;
+    color:#222;
+    margin-bottom:30px;
+}
+
+/* =======================
+   CART ITEM
+======================= */
+
+.cart-item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+
+    background:#fff;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* =======================
+   IMAGE
+======================= */
+
+.cart-item img{
+    width:130px;
+    height:130px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* =======================
+   PRODUCT INFO
+======================= */
+
+.cart-info{
+    flex:1;
+}
+
+.cart-info h3{
+    font-size:24px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.cart-info p{
+    color:#555;
+    margin:8px 0;
+}
+
+.cart-info .price{
+    font-size:20px;
+    font-weight:bold;
+    color:#ff6b00;
+}
+
+/* =======================
+   QUANTITY
+======================= */
+
+.quantity{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:15px;
+}
+
+.quantity button{
+    width:35px;
+    height:35px;
+
+    border:none;
+
+    background:#ff6b00;
+
+    color:#fff;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:18px;
+}
+
+.quantity span{
+    font-size:18px;
+    font-weight:600;
+}
+
+/* =======================
+   REMOVE BUTTON
+======================= */
+
+.remove-btn{
+
+    padding:12px 20px;
+
+    background:red;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.remove-btn:hover{
+
+    background:#c40000;
+
+}
+
+/* =======================
+   SUMMARY
+======================= */
+
+.cart-summary{
+
+    margin-top:40px;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    text-align:right;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.cart-summary h3{
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+.cart-summary button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    background:#ff6b00;
+
+    color:white;
+
+    font-size:18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.cart-summary button:hover{
+
+    background:#e65c00;
+
+}
+
+/* =======================
+   EMPTY CART
+======================= */
+
+.empty-cart{
+
+    background:white;
+
+    padding:80px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.empty-cart h2{
+
+    color:#888;
+
+    font-size:32px;
+
+}
+
+.empty-cart p{
+
+    margin-top:15px;
+
+    color:#666;
+
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+
+@media(max-width:768px){
+
+.cart-item{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.cart-summary{
+
+    text-align:center;
+
+}
+
+}
+.remove-btn{
+
+    margin-top:10px;
+    padding:8px 18px;
+    background:#ff4d4d;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.remove-btn:hover{
+
+    background:#d60000;
+
+}
